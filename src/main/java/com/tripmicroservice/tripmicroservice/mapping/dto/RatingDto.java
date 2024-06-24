@@ -1,4 +1,4 @@
-package com.tripmicroservice.tripmicroservice.dto;
+package com.tripmicroservice.tripmicroservice.mapping.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,11 +11,11 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReservationDto {
+public class RatingDto {
     private int id;
-    private int tripId;
+    private int score;
     private int touristId;
-    private Date reservationDate;
-    private Date startDate;
-    private String status;
+    private int tripId;
+    private Date creationDate;
+
 }

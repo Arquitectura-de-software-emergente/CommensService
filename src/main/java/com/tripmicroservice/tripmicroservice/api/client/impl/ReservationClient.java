@@ -1,6 +1,6 @@
-package com.tripmicroservice.tripmicroservice.client;
+package com.tripmicroservice.tripmicroservice.api.client.impl;
 
-import com.tripmicroservice.tripmicroservice.dto.ReservationDto;
+import com.tripmicroservice.tripmicroservice.mapping.dto.ReservationDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

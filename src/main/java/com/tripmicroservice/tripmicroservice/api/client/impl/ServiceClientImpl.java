@@ -1,6 +1,7 @@
-package com.tripmicroservice.tripmicroservice.client;
+package com.tripmicroservice.tripmicroservice.api.client.impl;
 
-import com.tripmicroservice.tripmicroservice.dto.ServicesDto;
+import com.tripmicroservice.tripmicroservice.api.client.ServiceClient;
+import com.tripmicroservice.tripmicroservice.mapping.dto.ServicesDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -9,7 +10,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import java.util.List;
 
 @Service
-public class ServiceClientImpl implements ServiceClient{
+public class ServiceClientImpl implements ServiceClient {
     private final WebClient webClient;
 
     @Autowired

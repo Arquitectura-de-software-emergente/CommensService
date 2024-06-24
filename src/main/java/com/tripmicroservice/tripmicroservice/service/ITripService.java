@@ -1,15 +1,15 @@
-package com.tripmicroservice.tripmicroservice.service.impl;
+package com.tripmicroservice.tripmicroservice.service;
 
-import com.tripmicroservice.tripmicroservice.client.RatingClient;
-import com.tripmicroservice.tripmicroservice.client.ReservationClient;
-import com.tripmicroservice.tripmicroservice.client.ServiceClient;
-import com.tripmicroservice.tripmicroservice.dto.RatingDto;
-import com.tripmicroservice.tripmicroservice.dto.ReservationDto;
-import com.tripmicroservice.tripmicroservice.dto.ServicesDto;
-import com.tripmicroservice.tripmicroservice.entities.Trip;
-import com.tripmicroservice.tripmicroservice.http.TripResponse;
-import com.tripmicroservice.tripmicroservice.repository.TripRepository;
-import com.tripmicroservice.tripmicroservice.service.TripService;
+import com.tripmicroservice.tripmicroservice.api.client.impl.RatingClient;
+import com.tripmicroservice.tripmicroservice.api.client.impl.ReservationClient;
+import com.tripmicroservice.tripmicroservice.api.client.ServiceClient;
+import com.tripmicroservice.tripmicroservice.mapping.dto.RatingDto;
+import com.tripmicroservice.tripmicroservice.mapping.dto.ReservationDto;
+import com.tripmicroservice.tripmicroservice.mapping.dto.ServicesDto;
+import com.tripmicroservice.tripmicroservice.domain.model.Trip;
+import com.tripmicroservice.tripmicroservice.domain.persistance.TripRepository;
+import com.tripmicroservice.tripmicroservice.domain.service.TripService;
+import com.tripmicroservice.tripmicroservice.resource.TripResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
